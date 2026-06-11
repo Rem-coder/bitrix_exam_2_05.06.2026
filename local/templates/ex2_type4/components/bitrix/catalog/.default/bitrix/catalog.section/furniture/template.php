@@ -47,6 +47,16 @@ foreach($arResult["ITEMS"] as $cell=>$arElement):
 		<?=$arElement["PREVIEW_TEXT"]?>
 	</div>
 
+
+	<? if(!empty($arElement['RECENZS'])): ?>
+		<?foreach ($arElement['RECENZS'] as $id => $value): ?>
+			<? if($id == 0): ?>
+				<div> <br> Рецензии: <br></div>
+			<?endif;?>
+				<div> <br> <?=$value['NAME']?> <br></div>
+		<?endforeach;?>
+	<?endif;?>
+
 <?
 	foreach($arElement["PRICES"] as $code=>$arPrice):
 		if($arPrice["CAN_ACCESS"]):
@@ -57,6 +67,7 @@ foreach($arResult["ITEMS"] as $cell=>$arElement):
 	endforeach;
 ?>
 </div>
+
 <?
 endforeach; // foreach($arResult["ITEMS"] as $arElement):
 ?>
@@ -65,3 +76,4 @@ endforeach; // foreach($arResult["ITEMS"] as $arElement):
 	<br /><?=$arResult["NAV_STRING"]?>
 <?endif;?>
 </div>
+
