@@ -1,2 +1,0 @@
-/bitrix/cache/
-/bitrix/managed_cache/
