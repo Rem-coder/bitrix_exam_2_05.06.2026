@@ -1,3 +1,5 @@
 /bitrix/cache/
 /bitrix/managed_cache/
 /bitrix/modules/update_partner.log
+/bitrix/updater_partner.log
+/*.log
