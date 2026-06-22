@@ -2,6 +2,7 @@
 use Bitrix\Main\Localization\Loc;
 use Bitrix\Main\UserTable;
 use Bitrix\Main\Mail\Event;
+use ORM\Fields\ExpressionField; 
 
 $eventManager = \Bitrix\Main\EventManager::getInstance();
 
@@ -9,9 +10,9 @@ AddEventHandler("iblock", "OnBeforeIBlockElementUpdate", Array("MyRewiesEventHan
 AddEventHandler("iblock", "OnBeforeIBlockElementAdd", Array("MyRewiesEventHandlers", "OnBeforeIBlockElementAddHandler"));
 AddEventHandler("iblock", "OnAfterIBlockElementUpdate", Array("MyRewiesEventHandlers", "OnAfterIBlockElementUpdateHandler"));
 
-#$eventManager->addEventHandler("mymodule", "OnMacrosProductCreate", "OnMacrosProductCreate");
 $eventManager->addEventHandler("main", "OnBeforeUserUpdate", ["MyUserEventHandlers", "OnBeforeUserUpdateHandler"]);
 $eventManager->addEventHandler("main", "OnAfterUserUpdate", ["MyUserEventHandlers", "OnAfterUserUpdateHandler"]);
+$eventManager->addEventHandler("main", "OnSendUserInfo", ["MyMailEventHundlers", "MyOnSendUserInfoHandler"]);
 
 class MyRewiesEventHandlers{
 
@@ -102,7 +103,7 @@ class MyUserEventHandlers{
 
     private static function GetValueUserClass($userClassID){
 
-        $userClass = Loc::getMessage("EMPTY_USER_CLASS");
+        $userClass = EMPTY_USER_CLASS;
 
         if(empty($userClassID)){
             return $userClass;
@@ -160,3 +161,49 @@ class MyUserEventHandlers{
         return true;
     }
 }
+
+class MyMailEventHundlers{
+
+    public static function MyOnSendUserInfoHandler(&$arFields){
+
+        $userID = $arFields["FIELDS"]["USER_ID"];
+        if(!$userID){
+            return true;
+        };
+
+        $userClassId = UserTable::getList([
+            'select' => ["ID", "UF_USER_CLASS"],
+            'filter' => ["ID" => $arFields["FIELDS"]["USER_ID"]]
+        ])->fetch();
+
+        $userClassId = $res ? $res["UF_USER_CLASS"] : null;
+
+        if(!$userClassId){
+            $userClassValue = EMPTY_USER_CLASS;
+        }else{
+            $userClassValue = CUserFieldEnum::GetList([], ["ID" => $userClassId])->fetch()["VALUE"];
+        };
+
+        $arFields["FIELDS"]["CLASS"] = $userClassValue;
+
+        return true;
+    }
+
+}
+
+/*
+Event::send([
+    "EVENT_NAME" => "USER_INFO",
+    "LID" => MY_SITE_ID,
+    "C_FIELDS" => [
+        "SITE_NAME" => "s1",
+         "NAME" => "test",
+         "LAST_NAME" => "test",
+         "DEFAULT_EMAIL_FROM" => "test@test.ru",
+         "EMAIL" => "test@test.ru",
+         "LOGIN" => "testLogin",
+         "USER_ID" => 1
+    ]
+]);
+
+*/

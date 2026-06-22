@@ -16,3 +16,6 @@ if(!defined("MY_SITE_ID")){
 if(!defined("AGENT_NAME")){
     define("AGENT_NAME", "ex2_610");   
 }
+if(!defined("EMPTY_USER_CLASS")){
+    define("EMPTY_USER_CLASS", "Неназначенный класс");
+}
