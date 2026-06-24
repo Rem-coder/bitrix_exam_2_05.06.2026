@@ -1,0 +1,25 @@
+Array
+(
+    [LAST_MODIFIED] => 23.06.2026 10:05:56
+    [DATE_FROM] => 
+    [DATE_TO] => 
+    [TITLE] => Recenz 1
+    [PARAM1] => ex2
+    [PARAM2] => 5
+    [SITE_ID] => Array
+        (
+            [0] => s1
+        )
+
+    [PERMISSIONS] => Array
+        (
+            [0] => 1
+        )
+
+    [URL] => =ID=37&EXTERNAL_ID=37&IBLOCK_SECTION_ID=&IBLOCK_TYPE_ID=ex2&IBLOCK_ID=5&IBLOCK_CODE=reviews&IBLOCK_EXTERNAL_ID=&CODE=
+    [BODY] => ANONS ANONS
+
+    [TAGS] => 
+    [MODULE_ID] => iblock
+    [ITEM_ID] => 37
+)

@@ -3,6 +3,8 @@ use Bitrix\Main\Localization\Loc;
 use Bitrix\Main\UserTable;
 use Bitrix\Main\Mail\Event;
 use ORM\Fields\ExpressionField; 
+use \Bitrix\Iblock\ElementTable;
+use \Bitrix\Main\Loader;
 
 $eventManager = \Bitrix\Main\EventManager::getInstance();
 
@@ -13,6 +15,8 @@ AddEventHandler("iblock", "OnAfterIBlockElementUpdate", Array("MyRewiesEventHand
 $eventManager->addEventHandler("main", "OnBeforeUserUpdate", ["MyUserEventHandlers", "OnBeforeUserUpdateHandler"]);
 $eventManager->addEventHandler("main", "OnAfterUserUpdate", ["MyUserEventHandlers", "OnAfterUserUpdateHandler"]);
 $eventManager->addEventHandler("main", "OnSendUserInfo", ["MyMailEventHundlers", "MyOnSendUserInfoHandler"]);
+
+$eventManager->addEventHandler("search", "BeforeIndex", ["MySearchHundlers", "MyBeforeIndexHandler"]);
 
 class MyRewiesEventHandlers{
 
@@ -191,19 +195,94 @@ class MyMailEventHundlers{
 
 }
 
-/*
-Event::send([
-    "EVENT_NAME" => "USER_INFO",
-    "LID" => MY_SITE_ID,
-    "C_FIELDS" => [
-        "SITE_NAME" => "s1",
-         "NAME" => "test",
-         "LAST_NAME" => "test",
-         "DEFAULT_EMAIL_FROM" => "test@test.ru",
-         "EMAIL" => "test@test.ru",
-         "LOGIN" => "testLogin",
-         "USER_ID" => 1
-    ]
-]);
+class MySearchHundlers{
 
-*/
+    private static $arrayReviewUsersClass = null;
+
+    private static function GenerateArrayUsersClass(){
+        
+        $reviewsAuthors = [];
+
+        $authorsClass = [];
+        $classesName = [];
+
+        if(!Loader::includeModule('iblock')){
+            return $reviewsAuthors;
+        }
+
+        $reviews = CIBlockElement::GetList(
+            [],
+            ["ACTIVE"=>"Y", "IBLOCK_ID" => REVIEWS_IBLOCK_ID],
+            false,
+            false,
+            ["IBLOCK_ID", "ID", "PROPERTY_AUTHOR"]
+        );
+
+        while ($review = $reviews->GetNext()){
+            $reviewsAuthors[$review["ID"]] = $review["PROPERTY_AUTHOR_VALUE"]; 
+        }
+
+        if(empty($reviewsAuthors)){
+            return $reviewsAuthors;
+        }
+
+        $authorsRes = UserTable::getList([
+            'select' => ["ID", "UF_USER_CLASS"],
+            'filter' => ["ID" => array_filter(array_unique(array_values($reviewsAuthors)))]
+        ]);
+        
+        while($author = $authorsRes->fetch()){
+            $authorsClass[$author["ID"]] = $author["UF_USER_CLASS"];
+        }
+
+        if(empty($authorsClass)){
+            return $reviewsAuthors;
+        }
+
+        $classesRes = CUserFieldEnum::GetList(
+            [],
+            ["USER_FIELD_ID" => ID_ENUM_CLASS]
+        );
+
+        while($class = $classesRes->GetNext()){
+            $classesName[$class["ID"]] = $class["VALUE"];
+            #file_put_contents($_SERVER["DOCUMENT_ROOT"]."/local/logSearch.txt", print_r($class, true), FILE_APPEND);
+        }
+
+        foreach($authorsClass as &$value){
+            $value = $classesName[$value];
+        }
+        unset($value);
+        
+        foreach ($reviewsAuthors as &$value) {
+            $value = $authorsClass[$value];
+        }
+        unset($value);
+
+        #file_put_contents($_SERVER["DOCUMENT_ROOT"]."/local/logSearch.txt", print_r($reviewsAuthors, true),FILE_APPEND);
+
+        return $reviewsAuthors;
+
+    }
+
+    public static function MyBeforeIndexHandler($Fields){
+
+        if(self::$arrayReviewUsersClass === null){
+            self::$arrayReviewUsersClass = self::GenerateArrayUsersClass();
+        }
+
+        #file_put_contents($_SERVER["DOCUMENT_ROOT"]."/local/logSearch.txt", print_r($Fields, true),FILE_APPEND);
+
+        if($Fields["MODULE_ID"] == MODULE_IBLOCK_ID 
+        && $Fields["PARAM2"] == ID_IBLOCK_RECENZ
+        && substr($Fields["ITEM_ID"], 0, 1) != 'S'){
+            
+            $clasUserRewie = self::$arrayReviewUsersClass[$Fields["ITEM_ID"]] ? self::$arrayReviewUsersClass[$Fields["ITEM_ID"]] : EMPTY_USER_CLASS;
+
+            $Fields["TITLE"] = $Fields["TITLE"].Loc::getMessage("MESS_CLASS").$clasUserRewie;
+        };
+
+        return $Fields;
+    } 
+
+}

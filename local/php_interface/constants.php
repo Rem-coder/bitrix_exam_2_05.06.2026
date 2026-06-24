@@ -19,3 +19,12 @@ if(!defined("AGENT_NAME")){
 if(!defined("EMPTY_USER_CLASS")){
     define("EMPTY_USER_CLASS", "Неназначенный класс");
 }
+if(!defined("REVIEWS_IBLOCK_ID")){
+    define("REVIEWS_IBLOCK_ID", 5);
+}
+if(!defined("ID_ENUM_CLASS")){
+    define("ID_ENUM_CLASS", 9);
+}
+if(!defined("MODULE_IBLOCK_ID")){
+    define("MODULE_IBLOCK_ID", "iblock");
+}

@@ -4,3 +4,4 @@ $MESS["MESSAGE_CHANGE_AUTHOR"] = "В рецензии #ID_REVIEW# изменил
 $MESS["NOT_FOUND_FIELD_USER_CLASS"] = "Не найдено пользовательское поле 'Класс пользователя'!";
 $MESS["MESS_CLASS_USER_WAS_UPDATE"] = "Класс пользователя изменился. Был: #OLD_USER_CLASS#, стал #NEW_USER_CLASS#";
 $MESS["MESS_EVENT_NAME"] = "EX2_AUTHOR_INFO";
+$MESS["MESS_CLSS"] = " Класс: ";

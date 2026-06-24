@@ -37,40 +37,5 @@ $APPLICATION->IncludeComponent("bitrix:menu", "bottom", array(
 		</div>
 		<div id="footer-design"><?=GetMessage("FOOTER_DISIGN")?></div>
 	</div>
-
-	<div>
-<?
-	use \Bitrix\Main\Type\DateTime as BitrixDateTime;
-
-	$lastRunDate = "";
-	$lastDate = $lastRunDate ? $lastRunDate : (new BitrixDateTime("2000-01-01 00:00:00", "Y-m-d H:i:s"))->toString();
-	$currentDate = new BitrixDateTime();
-	
-	$dateString = '18.06.2026 03:19:01';
-
-	$res = CIBlockElement::GetList(
-		[],
-		[
-			"IBLOCK_ID" => ID_IBLOCK_RECENZ,
-			"DATE_MODIFY_FROM" => $lastDate,
-			"DATE_MODIFY_TO" => $dateString
-		],
-		[]
-	);
-
-	$lastDate = "MyAgent::Agent_ex_610('".(new BitrixDateTime())->toString()."');";
-
-
-	echo "<pre>".htmlspecialchars(print_r($res, true))."</pre>";
-
-	#while($val = $res->GetNext())
-	#{
-		#echo "<pre>".htmlspecialchars(print_r($val, true))."</pre>";
-	#}
-
-
-?>
-</div>
-
 </body>
 </html>
