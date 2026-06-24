@@ -28,3 +28,9 @@ if(!defined("ID_ENUM_CLASS")){
 if(!defined("MODULE_IBLOCK_ID")){
     define("MODULE_IBLOCK_ID", "iblock");
 }
+if(!defined("GROUP_CONTENT_REDACTOR_ID")){
+    define("GROUP_CONTENT_REDACTOR_ID", 5);
+}
+if(!defined("PARENT_MENU_CONTENT_VALUE")){
+    define("PARENT_MENU_CONTENT_VALUE","global_menu_content");
+}

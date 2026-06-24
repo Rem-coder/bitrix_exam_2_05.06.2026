@@ -1,0 +1,1467 @@
+Array
+(
+    [global_menu_content] => Array
+        (
+            [menu_id] => content
+            [text] => Контент
+            [title] => Управление контентом сайта
+            [sort] => 100
+            [items_id] => global_menu_content
+            [help_section] => content
+            [items] => Array
+                (
+                )
+
+        )
+
+    [fast] => Array
+        (
+            [menu_id] => fast
+            [text] => Быстрый доступ
+            [title] => Быстрый доступ
+            [items_id] => global_menu_fast
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Ссылка 1
+                            [url] => https://test1
+                            [title] => Ссылка 1
+                        )
+
+                    [1] => Array
+                        (
+                            [text] => Ссылка 2
+                            [url] => https://test2
+                            [title] => Ссылка 2
+                        )
+
+                )
+
+        )
+
+)
+BANArray
+(
+    [1] => Array
+        (
+            [text] => Новости
+            [url] => iblock_admin.php?type=news&amp;lang=ru&amp;admin=N
+            [more_url] => Array
+                (
+                    [0] => iblock_admin.php?type=news&lang=ru&admin=N
+                )
+
+            [title] => Новости
+            [parent_menu] => global_menu_content
+            [sort] => 200
+            [icon] => iblock_menu_icon_types
+            [page_icon] => iblock_page_icon_types
+            [module_id] => iblock
+            [items_id] => menu_iblock_/news
+            [dynamic] => 1
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Новости
+                            [url] => iblock_element_admin.php?IBLOCK_ID=1&type=news&lang=ru&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_element_edit.php?type=news&lang=ru&IBLOCK_ID=1
+                                    [1] => iblock_history_list.php?type=news&lang=ru&IBLOCK_ID=1
+                                    [2] => iblock_element_admin.php?IBLOCK_ID=1&type=news&lang=ru
+                                )
+
+                            [title] => Новости
+                            [items_id] => menu_iblock_/news/1
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [2] => Array
+        (
+            [text] => Товары и услуги
+            [url] => iblock_admin.php?type=products&amp;lang=ru&amp;admin=N
+            [more_url] => Array
+                (
+                    [0] => iblock_admin.php?type=products&lang=ru&admin=N
+                )
+
+            [title] => Товары и услуги
+            [parent_menu] => global_menu_content
+            [sort] => 201
+            [icon] => iblock_menu_icon_types
+            [page_icon] => iblock_page_icon_types
+            [module_id] => iblock
+            [items_id] => menu_iblock_/products
+            [dynamic] => 1
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => [s1] Продукция
+                            [url] => iblock_section_admin.php?IBLOCK_ID=2&type=products&lang=ru&find_section_section=0&SECTION_ID=0&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_section_admin.php?IBLOCK_ID=2&type=products&lang=ru&find_section_section=0
+                                    [1] => iblock_section_admin.php?IBLOCK_ID=2&type=products&lang=ru&find_section_section=-1
+                                    [2] => iblock_section_edit.php?IBLOCK_ID=2&type=products&find_section_section=-1
+                                    [3] => iblock_section_edit.php?IBLOCK_ID=2&type=products&find_section_section=0
+                                    [4] => iblock_element_edit.php?IBLOCK_ID=2&type=products&find_section_section=-1
+                                    [5] => iblock_element_edit.php?IBLOCK_ID=2&type=products&find_section_section=0
+                                    [6] => iblock_history_list.php?IBLOCK_ID=2&type=products&find_section_section=-1
+                                    [7] => iblock_start_bizproc.php?document_type=iblock_2
+                                    [8] => iblock_element_edit.php?IBLOCK_ID=2&type=products
+                                    [9] => iblock_history_list.php?IBLOCK_ID=2&type=products
+                                )
+
+                            [title] => [s1] Продукция
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items_id] => menu_iblock_/products/2
+                            [dynamic] => 1
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [text] => [s1] Услуги
+                            [url] => iblock_section_admin.php?IBLOCK_ID=3&type=products&lang=ru&find_section_section=0&SECTION_ID=0&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_section_admin.php?IBLOCK_ID=3&type=products&lang=ru&find_section_section=0
+                                    [1] => iblock_section_admin.php?IBLOCK_ID=3&type=products&lang=ru&find_section_section=-1
+                                    [2] => iblock_section_edit.php?IBLOCK_ID=3&type=products&find_section_section=-1
+                                    [3] => iblock_section_edit.php?IBLOCK_ID=3&type=products&find_section_section=0
+                                    [4] => iblock_element_edit.php?IBLOCK_ID=3&type=products&find_section_section=-1
+                                    [5] => iblock_element_edit.php?IBLOCK_ID=3&type=products&find_section_section=0
+                                    [6] => iblock_history_list.php?IBLOCK_ID=3&type=products&find_section_section=-1
+                                    [7] => iblock_start_bizproc.php?document_type=iblock_3
+                                    [8] => iblock_element_edit.php?IBLOCK_ID=3&type=products
+                                    [9] => iblock_history_list.php?IBLOCK_ID=3&type=products
+                                )
+
+                            [title] => [s1] Услуги
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items_id] => menu_iblock_/products/3
+                            [dynamic] => 1
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [3] => Array
+        (
+            [text] => Вакансии
+            [url] => iblock_admin.php?type=vacancies&amp;lang=ru&amp;admin=N
+            [more_url] => Array
+                (
+                    [0] => iblock_admin.php?type=vacancies&lang=ru&admin=N
+                )
+
+            [title] => Вакансии
+            [parent_menu] => global_menu_content
+            [sort] => 202
+            [icon] => iblock_menu_icon_types
+            [page_icon] => iblock_page_icon_types
+            [module_id] => iblock
+            [items_id] => menu_iblock_/vacancies
+            [dynamic] => 1
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Вакансии
+                            [url] => iblock_section_admin.php?IBLOCK_ID=4&type=vacancies&lang=ru&find_section_section=0&SECTION_ID=0&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_section_admin.php?IBLOCK_ID=4&type=vacancies&lang=ru&find_section_section=0
+                                    [1] => iblock_section_admin.php?IBLOCK_ID=4&type=vacancies&lang=ru&find_section_section=-1
+                                    [2] => iblock_section_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=-1
+                                    [3] => iblock_section_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=0
+                                    [4] => iblock_element_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=-1
+                                    [5] => iblock_element_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=0
+                                    [6] => iblock_history_list.php?IBLOCK_ID=4&type=vacancies&find_section_section=-1
+                                    [7] => iblock_start_bizproc.php?document_type=iblock_4
+                                    [8] => iblock_element_edit.php?IBLOCK_ID=4&type=vacancies
+                                    [9] => iblock_history_list.php?IBLOCK_ID=4&type=vacancies
+                                )
+
+                            [title] => Вакансии
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items_id] => menu_iblock_/vacancies/4
+                            [dynamic] => 1
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [4] => Array
+        (
+            [parent_menu] => global_menu_content
+            [section] => iblock
+            [sort] => 300
+            [text] => Инфоблоки
+            [title] => Настройка информационных блоков
+            [icon] => iblock_menu_icon_settings
+            [page_icon] => iblock_page_icon_settings
+            [items_id] => menu_iblock
+            [module_id] => iblock
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Импорт
+                            [title] => Импорт данных в формат CSV
+                            [url] => iblock_data_import.php?lang=ru
+                            [items_id] => iblock_import
+                            [module_id] => iblock
+                            [items] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [text] => CSV
+                                            [url] => iblock_data_import.php?lang=ru
+                                            [module_id] => iblock
+                                            [more_url] => Array
+                                                (
+                                                    [0] => iblock_data_import.php
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [text] => Инструменты
+                            [title] => Инструменты
+                            [module_id] => iblock
+                            [items_id] => iblock_redirect
+                            [items] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [text] => Перейти к инфоблоку / разделу / элементу
+                                            [title] => Перейти на страницу списка элементов инфоблока / страницу редактирования раздела или элемента инфоблока
+                                            [url] => iblock_redirect_entity.php?lang=ru
+                                            [module_id] => iblock
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+Array
+(
+    [global_menu_content] => Array
+        (
+            [menu_id] => content
+            [text] => Контент
+            [title] => Управление контентом сайта
+            [sort] => 100
+            [items_id] => global_menu_content
+            [help_section] => content
+            [items] => Array
+                (
+                )
+
+        )
+
+    [fast] => Array
+        (
+            [menu_id] => fast
+            [text] => Быстрый доступ
+            [title] => Быстрый доступ
+            [items_id] => global_menu_fast
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Ссылка 1
+                            [url] => https://test1
+                            [title] => Ссылка 1
+                        )
+
+                    [1] => Array
+                        (
+                            [text] => Ссылка 2
+                            [url] => https://test2
+                            [title] => Ссылка 2
+                        )
+
+                )
+
+        )
+
+)
+BANArray
+(
+    [1] => Array
+        (
+            [text] => Новости
+            [url] => iblock_admin.php?type=news&amp;lang=ru&amp;admin=N
+            [more_url] => Array
+                (
+                    [0] => iblock_admin.php?type=news&lang=ru&admin=N
+                )
+
+            [title] => Новости
+            [parent_menu] => global_menu_content
+            [sort] => 200
+            [icon] => iblock_menu_icon_types
+            [page_icon] => iblock_page_icon_types
+            [module_id] => iblock
+            [items_id] => menu_iblock_/news
+            [dynamic] => 1
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Новости
+                            [url] => iblock_element_admin.php?IBLOCK_ID=1&type=news&lang=ru&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_element_edit.php?type=news&lang=ru&IBLOCK_ID=1
+                                    [1] => iblock_history_list.php?type=news&lang=ru&IBLOCK_ID=1
+                                    [2] => iblock_element_admin.php?IBLOCK_ID=1&type=news&lang=ru
+                                )
+
+                            [title] => Новости
+                            [items_id] => menu_iblock_/news/1
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [2] => Array
+        (
+            [text] => Товары и услуги
+            [url] => iblock_admin.php?type=products&amp;lang=ru&amp;admin=N
+            [more_url] => Array
+                (
+                    [0] => iblock_admin.php?type=products&lang=ru&admin=N
+                )
+
+            [title] => Товары и услуги
+            [parent_menu] => global_menu_content
+            [sort] => 201
+            [icon] => iblock_menu_icon_types
+            [page_icon] => iblock_page_icon_types
+            [module_id] => iblock
+            [items_id] => menu_iblock_/products
+            [dynamic] => 1
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => [s1] Продукция
+                            [url] => iblock_section_admin.php?IBLOCK_ID=2&type=products&lang=ru&find_section_section=0&SECTION_ID=0&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_section_admin.php?IBLOCK_ID=2&type=products&lang=ru&find_section_section=0
+                                    [1] => iblock_section_admin.php?IBLOCK_ID=2&type=products&lang=ru&find_section_section=-1
+                                    [2] => iblock_section_edit.php?IBLOCK_ID=2&type=products&find_section_section=-1
+                                    [3] => iblock_section_edit.php?IBLOCK_ID=2&type=products&find_section_section=0
+                                    [4] => iblock_element_edit.php?IBLOCK_ID=2&type=products&find_section_section=-1
+                                    [5] => iblock_element_edit.php?IBLOCK_ID=2&type=products&find_section_section=0
+                                    [6] => iblock_history_list.php?IBLOCK_ID=2&type=products&find_section_section=-1
+                                    [7] => iblock_start_bizproc.php?document_type=iblock_2
+                                    [8] => iblock_element_edit.php?IBLOCK_ID=2&type=products
+                                    [9] => iblock_history_list.php?IBLOCK_ID=2&type=products
+                                )
+
+                            [title] => [s1] Продукция
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items_id] => menu_iblock_/products/2
+                            [dynamic] => 1
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [text] => [s1] Услуги
+                            [url] => iblock_section_admin.php?IBLOCK_ID=3&type=products&lang=ru&find_section_section=0&SECTION_ID=0&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_section_admin.php?IBLOCK_ID=3&type=products&lang=ru&find_section_section=0
+                                    [1] => iblock_section_admin.php?IBLOCK_ID=3&type=products&lang=ru&find_section_section=-1
+                                    [2] => iblock_section_edit.php?IBLOCK_ID=3&type=products&find_section_section=-1
+                                    [3] => iblock_section_edit.php?IBLOCK_ID=3&type=products&find_section_section=0
+                                    [4] => iblock_element_edit.php?IBLOCK_ID=3&type=products&find_section_section=-1
+                                    [5] => iblock_element_edit.php?IBLOCK_ID=3&type=products&find_section_section=0
+                                    [6] => iblock_history_list.php?IBLOCK_ID=3&type=products&find_section_section=-1
+                                    [7] => iblock_start_bizproc.php?document_type=iblock_3
+                                    [8] => iblock_element_edit.php?IBLOCK_ID=3&type=products
+                                    [9] => iblock_history_list.php?IBLOCK_ID=3&type=products
+                                )
+
+                            [title] => [s1] Услуги
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items_id] => menu_iblock_/products/3
+                            [dynamic] => 1
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [3] => Array
+        (
+            [text] => Вакансии
+            [url] => iblock_admin.php?type=vacancies&amp;lang=ru&amp;admin=N
+            [more_url] => Array
+                (
+                    [0] => iblock_admin.php?type=vacancies&lang=ru&admin=N
+                )
+
+            [title] => Вакансии
+            [parent_menu] => global_menu_content
+            [sort] => 202
+            [icon] => iblock_menu_icon_types
+            [page_icon] => iblock_page_icon_types
+            [module_id] => iblock
+            [items_id] => menu_iblock_/vacancies
+            [dynamic] => 1
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Вакансии
+                            [url] => iblock_section_admin.php?IBLOCK_ID=4&type=vacancies&lang=ru&find_section_section=0&SECTION_ID=0&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_section_admin.php?IBLOCK_ID=4&type=vacancies&lang=ru&find_section_section=0
+                                    [1] => iblock_section_admin.php?IBLOCK_ID=4&type=vacancies&lang=ru&find_section_section=-1
+                                    [2] => iblock_section_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=-1
+                                    [3] => iblock_section_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=0
+                                    [4] => iblock_element_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=-1
+                                    [5] => iblock_element_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=0
+                                    [6] => iblock_history_list.php?IBLOCK_ID=4&type=vacancies&find_section_section=-1
+                                    [7] => iblock_start_bizproc.php?document_type=iblock_4
+                                    [8] => iblock_element_edit.php?IBLOCK_ID=4&type=vacancies
+                                    [9] => iblock_history_list.php?IBLOCK_ID=4&type=vacancies
+                                )
+
+                            [title] => Вакансии
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items_id] => menu_iblock_/vacancies/4
+                            [dynamic] => 1
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [4] => Array
+        (
+            [parent_menu] => global_menu_content
+            [section] => iblock
+            [sort] => 300
+            [text] => Инфоблоки
+            [title] => Настройка информационных блоков
+            [icon] => iblock_menu_icon_settings
+            [page_icon] => iblock_page_icon_settings
+            [items_id] => menu_iblock
+            [module_id] => iblock
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Импорт
+                            [title] => Импорт данных в формат CSV
+                            [url] => iblock_data_import.php?lang=ru
+                            [items_id] => iblock_import
+                            [module_id] => iblock
+                            [items] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [text] => CSV
+                                            [url] => iblock_data_import.php?lang=ru
+                                            [module_id] => iblock
+                                            [more_url] => Array
+                                                (
+                                                    [0] => iblock_data_import.php
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [text] => Инструменты
+                            [title] => Инструменты
+                            [module_id] => iblock
+                            [items_id] => iblock_redirect
+                            [items] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [text] => Перейти к инфоблоку / разделу / элементу
+                                            [title] => Перейти на страницу списка элементов инфоблока / страницу редактирования раздела или элемента инфоблока
+                                            [url] => iblock_redirect_entity.php?lang=ru
+                                            [module_id] => iblock
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+Array
+(
+    [global_menu_content] => Array
+        (
+            [menu_id] => content
+            [text] => Контент
+            [title] => Управление контентом сайта
+            [sort] => 100
+            [items_id] => global_menu_content
+            [help_section] => content
+            [items] => Array
+                (
+                )
+
+        )
+
+    [fast] => Array
+        (
+            [menu_id] => fast
+            [text] => Быстрый доступ
+            [title] => Быстрый доступ
+            [items_id] => global_menu_fast
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Ссылка 1
+                            [url] => https://test1
+                            [title] => Ссылка 1
+                        )
+
+                    [1] => Array
+                        (
+                            [text] => Ссылка 2
+                            [url] => https://test2
+                            [title] => Ссылка 2
+                        )
+
+                )
+
+        )
+
+)
+BANArray
+(
+    [1] => Array
+        (
+            [text] => Новости
+            [url] => iblock_admin.php?type=news&amp;lang=ru&amp;admin=N
+            [more_url] => Array
+                (
+                    [0] => iblock_admin.php?type=news&lang=ru&admin=N
+                )
+
+            [title] => Новости
+            [parent_menu] => global_menu_content
+            [sort] => 200
+            [icon] => iblock_menu_icon_types
+            [page_icon] => iblock_page_icon_types
+            [module_id] => iblock
+            [items_id] => menu_iblock_/news
+            [dynamic] => 1
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Новости
+                            [url] => iblock_element_admin.php?IBLOCK_ID=1&type=news&lang=ru&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_element_edit.php?type=news&lang=ru&IBLOCK_ID=1
+                                    [1] => iblock_history_list.php?type=news&lang=ru&IBLOCK_ID=1
+                                    [2] => iblock_element_admin.php?IBLOCK_ID=1&type=news&lang=ru
+                                )
+
+                            [title] => Новости
+                            [items_id] => menu_iblock_/news/1
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [2] => Array
+        (
+            [text] => Товары и услуги
+            [url] => iblock_admin.php?type=products&amp;lang=ru&amp;admin=N
+            [more_url] => Array
+                (
+                    [0] => iblock_admin.php?type=products&lang=ru&admin=N
+                )
+
+            [title] => Товары и услуги
+            [parent_menu] => global_menu_content
+            [sort] => 201
+            [icon] => iblock_menu_icon_types
+            [page_icon] => iblock_page_icon_types
+            [module_id] => iblock
+            [items_id] => menu_iblock_/products
+            [dynamic] => 1
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => [s1] Продукция
+                            [url] => iblock_section_admin.php?IBLOCK_ID=2&type=products&lang=ru&find_section_section=0&SECTION_ID=0&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_section_admin.php?IBLOCK_ID=2&type=products&lang=ru&find_section_section=0
+                                    [1] => iblock_section_admin.php?IBLOCK_ID=2&type=products&lang=ru&find_section_section=-1
+                                    [2] => iblock_section_edit.php?IBLOCK_ID=2&type=products&find_section_section=-1
+                                    [3] => iblock_section_edit.php?IBLOCK_ID=2&type=products&find_section_section=0
+                                    [4] => iblock_element_edit.php?IBLOCK_ID=2&type=products&find_section_section=-1
+                                    [5] => iblock_element_edit.php?IBLOCK_ID=2&type=products&find_section_section=0
+                                    [6] => iblock_history_list.php?IBLOCK_ID=2&type=products&find_section_section=-1
+                                    [7] => iblock_start_bizproc.php?document_type=iblock_2
+                                    [8] => iblock_element_edit.php?IBLOCK_ID=2&type=products
+                                    [9] => iblock_history_list.php?IBLOCK_ID=2&type=products
+                                )
+
+                            [title] => [s1] Продукция
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items_id] => menu_iblock_/products/2
+                            [dynamic] => 1
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [text] => [s1] Услуги
+                            [url] => iblock_section_admin.php?IBLOCK_ID=3&type=products&lang=ru&find_section_section=0&SECTION_ID=0&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_section_admin.php?IBLOCK_ID=3&type=products&lang=ru&find_section_section=0
+                                    [1] => iblock_section_admin.php?IBLOCK_ID=3&type=products&lang=ru&find_section_section=-1
+                                    [2] => iblock_section_edit.php?IBLOCK_ID=3&type=products&find_section_section=-1
+                                    [3] => iblock_section_edit.php?IBLOCK_ID=3&type=products&find_section_section=0
+                                    [4] => iblock_element_edit.php?IBLOCK_ID=3&type=products&find_section_section=-1
+                                    [5] => iblock_element_edit.php?IBLOCK_ID=3&type=products&find_section_section=0
+                                    [6] => iblock_history_list.php?IBLOCK_ID=3&type=products&find_section_section=-1
+                                    [7] => iblock_start_bizproc.php?document_type=iblock_3
+                                    [8] => iblock_element_edit.php?IBLOCK_ID=3&type=products
+                                    [9] => iblock_history_list.php?IBLOCK_ID=3&type=products
+                                )
+
+                            [title] => [s1] Услуги
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items_id] => menu_iblock_/products/3
+                            [dynamic] => 1
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [3] => Array
+        (
+            [text] => Вакансии
+            [url] => iblock_admin.php?type=vacancies&amp;lang=ru&amp;admin=N
+            [more_url] => Array
+                (
+                    [0] => iblock_admin.php?type=vacancies&lang=ru&admin=N
+                )
+
+            [title] => Вакансии
+            [parent_menu] => global_menu_content
+            [sort] => 202
+            [icon] => iblock_menu_icon_types
+            [page_icon] => iblock_page_icon_types
+            [module_id] => iblock
+            [items_id] => menu_iblock_/vacancies
+            [dynamic] => 1
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Вакансии
+                            [url] => iblock_section_admin.php?IBLOCK_ID=4&type=vacancies&lang=ru&find_section_section=0&SECTION_ID=0&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_section_admin.php?IBLOCK_ID=4&type=vacancies&lang=ru&find_section_section=0
+                                    [1] => iblock_section_admin.php?IBLOCK_ID=4&type=vacancies&lang=ru&find_section_section=-1
+                                    [2] => iblock_section_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=-1
+                                    [3] => iblock_section_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=0
+                                    [4] => iblock_element_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=-1
+                                    [5] => iblock_element_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=0
+                                    [6] => iblock_history_list.php?IBLOCK_ID=4&type=vacancies&find_section_section=-1
+                                    [7] => iblock_start_bizproc.php?document_type=iblock_4
+                                    [8] => iblock_element_edit.php?IBLOCK_ID=4&type=vacancies
+                                    [9] => iblock_history_list.php?IBLOCK_ID=4&type=vacancies
+                                )
+
+                            [title] => Вакансии
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items_id] => menu_iblock_/vacancies/4
+                            [dynamic] => 1
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [4] => Array
+        (
+            [parent_menu] => global_menu_content
+            [section] => iblock
+            [sort] => 300
+            [text] => Инфоблоки
+            [title] => Настройка информационных блоков
+            [icon] => iblock_menu_icon_settings
+            [page_icon] => iblock_page_icon_settings
+            [items_id] => menu_iblock
+            [module_id] => iblock
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Импорт
+                            [title] => Импорт данных в формат CSV
+                            [url] => iblock_data_import.php?lang=ru
+                            [items_id] => iblock_import
+                            [module_id] => iblock
+                            [items] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [text] => CSV
+                                            [url] => iblock_data_import.php?lang=ru
+                                            [module_id] => iblock
+                                            [more_url] => Array
+                                                (
+                                                    [0] => iblock_data_import.php
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [text] => Инструменты
+                            [title] => Инструменты
+                            [module_id] => iblock
+                            [items_id] => iblock_redirect
+                            [items] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [text] => Перейти к инфоблоку / разделу / элементу
+                                            [title] => Перейти на страницу списка элементов инфоблока / страницу редактирования раздела или элемента инфоблока
+                                            [url] => iblock_redirect_entity.php?lang=ru
+                                            [module_id] => iblock
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+Array
+(
+    [global_menu_content] => Array
+        (
+            [menu_id] => content
+            [text] => Контент
+            [title] => Управление контентом сайта
+            [sort] => 100
+            [items_id] => global_menu_content
+            [help_section] => content
+            [items] => Array
+                (
+                )
+
+        )
+
+    [fast] => Array
+        (
+            [menu_id] => fast
+            [text] => Быстрый доступ
+            [title] => Быстрый доступ
+            [items_id] => global_menu_fast
+            [sort] => 0
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Ссылка 1
+                            [url] => https://test1
+                            [title] => Ссылка 1
+                        )
+
+                    [1] => Array
+                        (
+                            [text] => Ссылка 2
+                            [url] => https://test2
+                            [title] => Ссылка 2
+                        )
+
+                )
+
+        )
+
+)
+BANArray
+(
+    [1] => Array
+        (
+            [text] => Новости
+            [url] => iblock_admin.php?type=news&amp;lang=ru&amp;admin=N
+            [more_url] => Array
+                (
+                    [0] => iblock_admin.php?type=news&lang=ru&admin=N
+                )
+
+            [title] => Новости
+            [parent_menu] => global_menu_content
+            [sort] => 200
+            [icon] => iblock_menu_icon_types
+            [page_icon] => iblock_page_icon_types
+            [module_id] => iblock
+            [items_id] => menu_iblock_/news
+            [dynamic] => 1
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Новости
+                            [url] => iblock_element_admin.php?IBLOCK_ID=1&type=news&lang=ru&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_element_edit.php?type=news&lang=ru&IBLOCK_ID=1
+                                    [1] => iblock_history_list.php?type=news&lang=ru&IBLOCK_ID=1
+                                    [2] => iblock_element_admin.php?IBLOCK_ID=1&type=news&lang=ru
+                                )
+
+                            [title] => Новости
+                            [items_id] => menu_iblock_/news/1
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [2] => Array
+        (
+            [text] => Товары и услуги
+            [url] => iblock_admin.php?type=products&amp;lang=ru&amp;admin=N
+            [more_url] => Array
+                (
+                    [0] => iblock_admin.php?type=products&lang=ru&admin=N
+                )
+
+            [title] => Товары и услуги
+            [parent_menu] => global_menu_content
+            [sort] => 201
+            [icon] => iblock_menu_icon_types
+            [page_icon] => iblock_page_icon_types
+            [module_id] => iblock
+            [items_id] => menu_iblock_/products
+            [dynamic] => 1
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => [s1] Продукция
+                            [url] => iblock_section_admin.php?IBLOCK_ID=2&type=products&lang=ru&find_section_section=0&SECTION_ID=0&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_section_admin.php?IBLOCK_ID=2&type=products&lang=ru&find_section_section=0
+                                    [1] => iblock_section_admin.php?IBLOCK_ID=2&type=products&lang=ru&find_section_section=-1
+                                    [2] => iblock_section_edit.php?IBLOCK_ID=2&type=products&find_section_section=-1
+                                    [3] => iblock_section_edit.php?IBLOCK_ID=2&type=products&find_section_section=0
+                                    [4] => iblock_element_edit.php?IBLOCK_ID=2&type=products&find_section_section=-1
+                                    [5] => iblock_element_edit.php?IBLOCK_ID=2&type=products&find_section_section=0
+                                    [6] => iblock_history_list.php?IBLOCK_ID=2&type=products&find_section_section=-1
+                                    [7] => iblock_start_bizproc.php?document_type=iblock_2
+                                    [8] => iblock_element_edit.php?IBLOCK_ID=2&type=products
+                                    [9] => iblock_history_list.php?IBLOCK_ID=2&type=products
+                                )
+
+                            [title] => [s1] Продукция
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items_id] => menu_iblock_/products/2
+                            [dynamic] => 1
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [text] => [s1] Услуги
+                            [url] => iblock_section_admin.php?IBLOCK_ID=3&type=products&lang=ru&find_section_section=0&SECTION_ID=0&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_section_admin.php?IBLOCK_ID=3&type=products&lang=ru&find_section_section=0
+                                    [1] => iblock_section_admin.php?IBLOCK_ID=3&type=products&lang=ru&find_section_section=-1
+                                    [2] => iblock_section_edit.php?IBLOCK_ID=3&type=products&find_section_section=-1
+                                    [3] => iblock_section_edit.php?IBLOCK_ID=3&type=products&find_section_section=0
+                                    [4] => iblock_element_edit.php?IBLOCK_ID=3&type=products&find_section_section=-1
+                                    [5] => iblock_element_edit.php?IBLOCK_ID=3&type=products&find_section_section=0
+                                    [6] => iblock_history_list.php?IBLOCK_ID=3&type=products&find_section_section=-1
+                                    [7] => iblock_start_bizproc.php?document_type=iblock_3
+                                    [8] => iblock_element_edit.php?IBLOCK_ID=3&type=products
+                                    [9] => iblock_history_list.php?IBLOCK_ID=3&type=products
+                                )
+
+                            [title] => [s1] Услуги
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items_id] => menu_iblock_/products/3
+                            [dynamic] => 1
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [3] => Array
+        (
+            [text] => Вакансии
+            [url] => iblock_admin.php?type=vacancies&amp;lang=ru&amp;admin=N
+            [more_url] => Array
+                (
+                    [0] => iblock_admin.php?type=vacancies&lang=ru&admin=N
+                )
+
+            [title] => Вакансии
+            [parent_menu] => global_menu_content
+            [sort] => 202
+            [icon] => iblock_menu_icon_types
+            [page_icon] => iblock_page_icon_types
+            [module_id] => iblock
+            [items_id] => menu_iblock_/vacancies
+            [dynamic] => 1
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Вакансии
+                            [url] => iblock_section_admin.php?IBLOCK_ID=4&type=vacancies&lang=ru&find_section_section=0&SECTION_ID=0&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_section_admin.php?IBLOCK_ID=4&type=vacancies&lang=ru&find_section_section=0
+                                    [1] => iblock_section_admin.php?IBLOCK_ID=4&type=vacancies&lang=ru&find_section_section=-1
+                                    [2] => iblock_section_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=-1
+                                    [3] => iblock_section_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=0
+                                    [4] => iblock_element_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=-1
+                                    [5] => iblock_element_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=0
+                                    [6] => iblock_history_list.php?IBLOCK_ID=4&type=vacancies&find_section_section=-1
+                                    [7] => iblock_start_bizproc.php?document_type=iblock_4
+                                    [8] => iblock_element_edit.php?IBLOCK_ID=4&type=vacancies
+                                    [9] => iblock_history_list.php?IBLOCK_ID=4&type=vacancies
+                                )
+
+                            [title] => Вакансии
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items_id] => menu_iblock_/vacancies/4
+                            [dynamic] => 1
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [4] => Array
+        (
+            [parent_menu] => global_menu_content
+            [section] => iblock
+            [sort] => 300
+            [text] => Инфоблоки
+            [title] => Настройка информационных блоков
+            [icon] => iblock_menu_icon_settings
+            [page_icon] => iblock_page_icon_settings
+            [items_id] => menu_iblock
+            [module_id] => iblock
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Импорт
+                            [title] => Импорт данных в формат CSV
+                            [url] => iblock_data_import.php?lang=ru
+                            [items_id] => iblock_import
+                            [module_id] => iblock
+                            [items] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [text] => CSV
+                                            [url] => iblock_data_import.php?lang=ru
+                                            [module_id] => iblock
+                                            [more_url] => Array
+                                                (
+                                                    [0] => iblock_data_import.php
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [text] => Инструменты
+                            [title] => Инструменты
+                            [module_id] => iblock
+                            [items_id] => iblock_redirect
+                            [items] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [text] => Перейти к инфоблоку / разделу / элементу
+                                            [title] => Перейти на страницу списка элементов инфоблока / страницу редактирования раздела или элемента инфоблока
+                                            [url] => iblock_redirect_entity.php?lang=ru
+                                            [module_id] => iblock
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+Array
+(
+    [global_menu_content] => Array
+        (
+            [menu_id] => content
+            [text] => Контент
+            [title] => Управление контентом сайта
+            [sort] => 100
+            [items_id] => global_menu_content
+            [help_section] => content
+            [items] => Array
+                (
+                )
+
+        )
+
+    [fast] => Array
+        (
+            [menu_id] => fast
+            [text] => Быстрый доступ
+            [title] => Быстрый доступ
+            [items_id] => global_menu_fast
+            [sort] => 500
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Ссылка 1
+                            [url] => https://test1
+                            [title] => Ссылка 1
+                        )
+
+                    [1] => Array
+                        (
+                            [text] => Ссылка 2
+                            [url] => https://test2
+                            [title] => Ссылка 2
+                        )
+
+                )
+
+        )
+
+)
+BANArray
+(
+    [1] => Array
+        (
+            [text] => Новости
+            [url] => iblock_admin.php?type=news&amp;lang=ru&amp;admin=N
+            [more_url] => Array
+                (
+                    [0] => iblock_admin.php?type=news&lang=ru&admin=N
+                )
+
+            [title] => Новости
+            [parent_menu] => global_menu_content
+            [sort] => 200
+            [icon] => iblock_menu_icon_types
+            [page_icon] => iblock_page_icon_types
+            [module_id] => iblock
+            [items_id] => menu_iblock_/news
+            [dynamic] => 1
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Новости
+                            [url] => iblock_element_admin.php?IBLOCK_ID=1&type=news&lang=ru&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_element_edit.php?type=news&lang=ru&IBLOCK_ID=1
+                                    [1] => iblock_history_list.php?type=news&lang=ru&IBLOCK_ID=1
+                                    [2] => iblock_element_admin.php?IBLOCK_ID=1&type=news&lang=ru
+                                )
+
+                            [title] => Новости
+                            [items_id] => menu_iblock_/news/1
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [2] => Array
+        (
+            [text] => Товары и услуги
+            [url] => iblock_admin.php?type=products&amp;lang=ru&amp;admin=N
+            [more_url] => Array
+                (
+                    [0] => iblock_admin.php?type=products&lang=ru&admin=N
+                )
+
+            [title] => Товары и услуги
+            [parent_menu] => global_menu_content
+            [sort] => 201
+            [icon] => iblock_menu_icon_types
+            [page_icon] => iblock_page_icon_types
+            [module_id] => iblock
+            [items_id] => menu_iblock_/products
+            [dynamic] => 1
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => [s1] Продукция
+                            [url] => iblock_section_admin.php?IBLOCK_ID=2&type=products&lang=ru&find_section_section=0&SECTION_ID=0&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_section_admin.php?IBLOCK_ID=2&type=products&lang=ru&find_section_section=0
+                                    [1] => iblock_section_admin.php?IBLOCK_ID=2&type=products&lang=ru&find_section_section=-1
+                                    [2] => iblock_section_edit.php?IBLOCK_ID=2&type=products&find_section_section=-1
+                                    [3] => iblock_section_edit.php?IBLOCK_ID=2&type=products&find_section_section=0
+                                    [4] => iblock_element_edit.php?IBLOCK_ID=2&type=products&find_section_section=-1
+                                    [5] => iblock_element_edit.php?IBLOCK_ID=2&type=products&find_section_section=0
+                                    [6] => iblock_history_list.php?IBLOCK_ID=2&type=products&find_section_section=-1
+                                    [7] => iblock_start_bizproc.php?document_type=iblock_2
+                                    [8] => iblock_element_edit.php?IBLOCK_ID=2&type=products
+                                    [9] => iblock_history_list.php?IBLOCK_ID=2&type=products
+                                )
+
+                            [title] => [s1] Продукция
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items_id] => menu_iblock_/products/2
+                            [dynamic] => 1
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [text] => [s1] Услуги
+                            [url] => iblock_section_admin.php?IBLOCK_ID=3&type=products&lang=ru&find_section_section=0&SECTION_ID=0&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_section_admin.php?IBLOCK_ID=3&type=products&lang=ru&find_section_section=0
+                                    [1] => iblock_section_admin.php?IBLOCK_ID=3&type=products&lang=ru&find_section_section=-1
+                                    [2] => iblock_section_edit.php?IBLOCK_ID=3&type=products&find_section_section=-1
+                                    [3] => iblock_section_edit.php?IBLOCK_ID=3&type=products&find_section_section=0
+                                    [4] => iblock_element_edit.php?IBLOCK_ID=3&type=products&find_section_section=-1
+                                    [5] => iblock_element_edit.php?IBLOCK_ID=3&type=products&find_section_section=0
+                                    [6] => iblock_history_list.php?IBLOCK_ID=3&type=products&find_section_section=-1
+                                    [7] => iblock_start_bizproc.php?document_type=iblock_3
+                                    [8] => iblock_element_edit.php?IBLOCK_ID=3&type=products
+                                    [9] => iblock_history_list.php?IBLOCK_ID=3&type=products
+                                )
+
+                            [title] => [s1] Услуги
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items_id] => menu_iblock_/products/3
+                            [dynamic] => 1
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [3] => Array
+        (
+            [text] => Вакансии
+            [url] => iblock_admin.php?type=vacancies&amp;lang=ru&amp;admin=N
+            [more_url] => Array
+                (
+                    [0] => iblock_admin.php?type=vacancies&lang=ru&admin=N
+                )
+
+            [title] => Вакансии
+            [parent_menu] => global_menu_content
+            [sort] => 202
+            [icon] => iblock_menu_icon_types
+            [page_icon] => iblock_page_icon_types
+            [module_id] => iblock
+            [items_id] => menu_iblock_/vacancies
+            [dynamic] => 1
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Вакансии
+                            [url] => iblock_section_admin.php?IBLOCK_ID=4&type=vacancies&lang=ru&find_section_section=0&SECTION_ID=0&apply_filter=Y
+                            [more_url] => Array
+                                (
+                                    [0] => iblock_section_admin.php?IBLOCK_ID=4&type=vacancies&lang=ru&find_section_section=0
+                                    [1] => iblock_section_admin.php?IBLOCK_ID=4&type=vacancies&lang=ru&find_section_section=-1
+                                    [2] => iblock_section_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=-1
+                                    [3] => iblock_section_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=0
+                                    [4] => iblock_element_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=-1
+                                    [5] => iblock_element_edit.php?IBLOCK_ID=4&type=vacancies&find_section_section=0
+                                    [6] => iblock_history_list.php?IBLOCK_ID=4&type=vacancies&find_section_section=-1
+                                    [7] => iblock_start_bizproc.php?document_type=iblock_4
+                                    [8] => iblock_element_edit.php?IBLOCK_ID=4&type=vacancies
+                                    [9] => iblock_history_list.php?IBLOCK_ID=4&type=vacancies
+                                )
+
+                            [title] => Вакансии
+                            [icon] => iblock_menu_icon_iblocks
+                            [page_icon] => iblock_page_icon_iblocks
+                            [skip_chain] => 1
+                            [module_id] => iblock
+                            [items_id] => menu_iblock_/vacancies/4
+                            [dynamic] => 1
+                            [items] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [4] => Array
+        (
+            [parent_menu] => global_menu_content
+            [section] => iblock
+            [sort] => 300
+            [text] => Инфоблоки
+            [title] => Настройка информационных блоков
+            [icon] => iblock_menu_icon_settings
+            [page_icon] => iblock_page_icon_settings
+            [items_id] => menu_iblock
+            [module_id] => iblock
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [text] => Импорт
+                            [title] => Импорт данных в формат CSV
+                            [url] => iblock_data_import.php?lang=ru
+                            [items_id] => iblock_import
+                            [module_id] => iblock
+                            [items] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [text] => CSV
+                                            [url] => iblock_data_import.php?lang=ru
+                                            [module_id] => iblock
+                                            [more_url] => Array
+                                                (
+                                                    [0] => iblock_data_import.php
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [text] => Инструменты
+                            [title] => Инструменты
+                            [module_id] => iblock
+                            [items_id] => iblock_redirect
+                            [items] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [text] => Перейти к инфоблоку / разделу / элементу
+                                            [title] => Перейти на страницу списка элементов инфоблока / страницу редактирования раздела или элемента инфоблока
+                                            [url] => iblock_redirect_entity.php?lang=ru
+                                            [module_id] => iblock
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

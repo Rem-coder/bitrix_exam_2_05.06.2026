@@ -11,12 +11,13 @@ $eventManager = \Bitrix\Main\EventManager::getInstance();
 AddEventHandler("iblock", "OnBeforeIBlockElementUpdate", Array("MyRewiesEventHandlers", "OnBeforeIBlockElementUpdateHandler"));
 AddEventHandler("iblock", "OnBeforeIBlockElementAdd", Array("MyRewiesEventHandlers", "OnBeforeIBlockElementAddHandler"));
 AddEventHandler("iblock", "OnAfterIBlockElementUpdate", Array("MyRewiesEventHandlers", "OnAfterIBlockElementUpdateHandler"));
+#AddEventHundler("main", "OnBuildGlobalMenu", ["MyGlobalMenuHundlers", "MyOnBuildGlobalMenuHindler"]);
 
 $eventManager->addEventHandler("main", "OnBeforeUserUpdate", ["MyUserEventHandlers", "OnBeforeUserUpdateHandler"]);
 $eventManager->addEventHandler("main", "OnAfterUserUpdate", ["MyUserEventHandlers", "OnAfterUserUpdateHandler"]);
 $eventManager->addEventHandler("main", "OnSendUserInfo", ["MyMailEventHundlers", "MyOnSendUserInfoHandler"]);
-
 $eventManager->addEventHandler("search", "BeforeIndex", ["MySearchHundlers", "MyBeforeIndexHandler"]);
+$eventManager->addEventHandler("main", "OnBuildGlobalMenu", ["MyGlobalMenuHundlers", "MyOnBuildGlobalMenuHindler"]);
 
 class MyRewiesEventHandlers{
 
@@ -285,4 +286,55 @@ class MySearchHundlers{
         return $Fields;
     } 
 
+}
+
+class MyGlobalMenuHundlers{
+
+    public static function MyOnBuildGlobalMenuHindler(&$aGlobalMenu, &$aModuleMenu){
+
+        global $USER;
+        if(!isset($USER) || !is_object($USER)){
+            return;
+        }
+        $currentUserGroups = $USER->GetUserGroupArray();
+      
+        if(!in_array(GROUP_CONTENT_REDACTOR_ID, $currentUserGroups)){
+            return;
+        }
+            
+        foreach ($aGlobalMenu as $key => $val) {
+            if($val["menu_id"] == 'content'){
+                continue;
+            }
+            unset($aGlobalMenu[$key]);        
+        }
+ 
+        foreach ($aModuleMenu as $key => $val) {
+            if($val["parent_menu"] == PARENT_MENU_CONTENT_VALUE){
+                continue;
+            }
+            unset($aModuleMenu[$key]); 
+        }
+
+        $aGlobalMenu["fast"] = [     
+            "menu_id" =>  "fast",
+            "text" => Loc::getMessage("TITLE_MAIN_MENU_FAST"),
+            "title" => Loc::getMessage("TITLE_MAIN_MENU_FAST"),
+            "items_id" => "global_menu_fast",
+            "sort" => 500,
+            "items" => [
+                [
+                    "text" => Loc::getMessage("SRC_NAME_1"),
+                    "url" => "https://test1",
+                    "title" => Loc::getMessage("SRC_NAME_1")
+                ],
+                [
+                    "text" => Loc::getMessage("SRC_NAME_2"),
+                    "url" => "https://test2",
+                    "title" => Loc::getMessage("SRC_NAME_2")
+                ]
+            ]   
+        ]; 
+    }
+    
 }
